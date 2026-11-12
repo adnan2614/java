@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class loop {
+    public static void main(String[] args) {
+        System.out.println("Enter a number : ");
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i = 0; i<n ; i++)
+        {
+            System.out.print(i+" ");
+        }
+        System.out.println("\nEnter another number : ");
+        int x=sc.nextInt();
+        int j=0;
+        while (j<x)
+        {
+            System.out.print(j+" ");
+            j++;
+        }
+
+        System.out.println("\nEnter another number : ");
+        int k=sc.nextInt();
+        int y=0;
+        do{
+            System.out.print(y+" ");
+            y++;
+        }while(y<k);
+
+    }
+}
