@@ -1,0 +1,80 @@
+import java.util.*;
+public class Input {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name : ");
+        String name = sc.nextLine();
+        System.out.println("Your name is : "+name);
+
+        System.out.println("Enter your age : ");
+        int age = sc.nextInt();
+        System.out.println("You are "+age+"years old");
+
+        sc.nextLine();
+        System.out.println("Enter your address : ");
+        String address = sc.nextLine();
+        System.out.println("You live in : "+address);
+
+        System.out.println("Enter your CGPA : ");
+        float cgpa = sc.nextFloat();
+        System.out.println("Your CGPA is : "+cgpa); 
+        
+        System.out.println("Enter a number : ");
+        int x = sc.nextInt();
+
+        switch (x)
+        {
+            case 0:
+            {
+                System.out.println("Saturday");
+                break;
+            }
+
+            case 1:
+            {
+                System.out.println("Sunday");
+                break;
+            }
+            case 2:
+            {
+                System.out.println("Monday");
+                break;
+            }
+            case 3:
+            {
+                System.out.println("Tuesday");
+                break;
+            }
+            case 4:
+            {
+                System.out.println("Wednesday");
+                break;
+            }
+            case 5:
+            {
+                System.out.println("Thursday");
+                break;
+            }
+            case 6:
+            {
+                System.out.println("Friday");
+                break;
+            }
+            default:
+            {
+                System.out.println("Invalid");
+            }
+        } 
+
+        System.out.println("Enter a number : ");
+        int y = sc.nextInt();
+        if(y<18)
+        {
+            System.out.println("Child");
+        }
+        else
+        {
+            System.out.println("Adult");
+        }
+    }
+}
