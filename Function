@@ -1,0 +1,43 @@
+public class Main {
+    public static void main(String [] args)
+    {
+        car c1 = new car();
+        c1.name = "Lamborginni";
+        c1.design = "Austhetic";
+        c1.model = 25;
+        c1.year = 2025;
+        c1.colour = "black";
+        c1.displayAll();
+        System.out.print("\n\n");
+        car c2 = new car();
+        c2.name = "BMW";
+        c2.design = "Awesome";
+        c2.model = 4;
+        c2.year = 2023;
+        c2.colour = "White";
+        c2.initilize("BMW","awesome",4,2023,"white");
+        //c2.displayAll();
+    }
+}
+class car
+{
+    String name;
+    String design;
+    int model;
+    int year;
+    String colour;
+    void displayAll()
+    {
+        System.out.print("Car name is : "+name+"\nThis car is : "+design+"\nMode number is : "+model+"\nThis car release on : "+year+"\nThis car is matte : "+colour);
+
+    }
+    void initilize(String n,String d, int m, int y, String c)
+    {
+        name = n;
+        design = d;
+        model = m;
+        colour = c;
+        year = y;
+        displayAll();
+    }
+}
